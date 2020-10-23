@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstructuraCondicionalAnidada5", "EstructuraCondicionalAnidada5\EstructuraCondicionalAnidada5.csproj", "{3CB70C6A-2780-4D2B-9C7D-93EFE4AF2D78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CB70C6A-2780-4D2B-9C7D-93EFE4AF2D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB70C6A-2780-4D2B-9C7D-93EFE4AF2D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB70C6A-2780-4D2B-9C7D-93EFE4AF2D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB70C6A-2780-4D2B-9C7D-93EFE4AF2D78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6148CE5-6E6B-45F9-A611-34EE8FE595AC}
+	EndGlobalSection
+EndGlobal
