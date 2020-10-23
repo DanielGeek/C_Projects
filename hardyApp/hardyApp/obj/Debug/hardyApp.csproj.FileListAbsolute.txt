@@ -1,0 +1,9 @@
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\bin\Debug\hardyApp.exe.config
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\bin\Debug\hardyApp.exe
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\bin\Debug\hardyApp.pdb
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.csprojAssemblyReference.cache
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.Form1.resources
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.Properties.Resources.resources
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.csproj.GenerateResource.cache
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.exe
+C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.pdb
