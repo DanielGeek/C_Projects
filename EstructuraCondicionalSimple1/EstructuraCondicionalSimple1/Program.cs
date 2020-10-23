@@ -4,20 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EstructuraCondicionalSimple1
+namespace EstructuraCondicionalCompuesta1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            float sueldo;
+            int num1, num2;
             string linea;
-            Console.Write("Ingrese el sueldo:");
+            Console.Write("Ingrese primer valor:");
             linea = Console.ReadLine();
-            sueldo = float.Parse(linea);
-            if (sueldo > 3000)
+            num1 = int.Parse(linea);
+            Console.Write("Ingrese segundo valor:");
+            linea = Console.ReadLine();
+            num2 = int.Parse(linea);
+            if (num1 > num2)
             {
-                Console.Write("Esta persona debe abonar impuestos");
+                Console.Write(num1);
+            }
+            else
+            {
+                Console.Write(num2);
             }
             Console.ReadKey();
         }
