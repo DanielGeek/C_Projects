@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PruebaClase52
+namespace PruebaClase5
 {
     class Empleado
     {
