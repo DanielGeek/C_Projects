@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrizIrregular1", "MatrizIrregular1\MatrizIrregular1.csproj", "{9C8C9C6C-3B1C-4A04-A9E2-4138EB30F8DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C8C9C6C-3B1C-4A04-A9E2-4138EB30F8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8C9C6C-3B1C-4A04-A9E2-4138EB30F8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8C9C6C-3B1C-4A04-A9E2-4138EB30F8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8C9C6C-3B1C-4A04-A9E2-4138EB30F8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3CE33A1-CD58-4428-8597-64BB8F79882C}
+	EndGlobalSection
+EndGlobal
