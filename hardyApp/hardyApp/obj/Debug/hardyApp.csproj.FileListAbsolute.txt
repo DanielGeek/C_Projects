@@ -7,3 +7,12 @@ C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.Properties.Reso
 C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.csproj.GenerateResource.cache
 C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.exe
 C:\Users\Ruben\source\repos\hardyApp\hardyApp\obj\Debug\hardyApp.pdb
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\bin\Debug\hardyApp.exe.config
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\bin\Debug\hardyApp.exe
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\bin\Debug\hardyApp.pdb
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\obj\Debug\hardyApp.csprojAssemblyReference.cache
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\obj\Debug\hardyApp.Form1.resources
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\obj\Debug\hardyApp.Properties.Resources.resources
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\obj\Debug\hardyApp.csproj.GenerateResource.cache
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\obj\Debug\hardyApp.exe
+C:\xampp\htdocs\proyectos_c_sharp\hardyApp\hardyApp\obj\Debug\hardyApp.pdb

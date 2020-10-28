@@ -116,7 +116,7 @@ namespace hardyApp
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e);
             }
 
         }
@@ -153,6 +153,7 @@ namespace hardyApp
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 return "error";
             }
 
@@ -175,7 +176,7 @@ namespace hardyApp
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e);
             }
         }
 
@@ -200,6 +201,7 @@ namespace hardyApp
             }
             catch (Exception e)
             {
+                Console.WriteLine(e);
                 return "error";
             }
 

@@ -36,25 +36,25 @@
             // 
             // btnPesar
             // 
-            this.btnPesar.Location = new System.Drawing.Point(565, 49);
+            this.btnPesar.Location = new System.Drawing.Point(221, 53);
             this.btnPesar.Name = "btnPesar";
             this.btnPesar.Size = new System.Drawing.Size(97, 38);
             this.btnPesar.TabIndex = 0;
-            this.btnPesar.Text = "Pesar";
+            this.btnPesar.Text = "Iniciar Pesaje";
             this.btnPesar.UseVisualStyleBackColor = true;
             this.btnPesar.Click += new System.EventHandler(this.btnPesar_Click);
             // 
             // lblPesoHardy
             // 
             this.lblPesoHardy.AutoSize = true;
-            this.lblPesoHardy.Location = new System.Drawing.Point(578, 131);
+            this.lblPesoHardy.Location = new System.Drawing.Point(240, 111);
             this.lblPesoHardy.Name = "lblPesoHardy";
             this.lblPesoHardy.Size = new System.Drawing.Size(0, 13);
             this.lblPesoHardy.TabIndex = 1;
             // 
             // btnCalibrar
             // 
-            this.btnCalibrar.Location = new System.Drawing.Point(275, 49);
+            this.btnCalibrar.Location = new System.Drawing.Point(43, 53);
             this.btnCalibrar.Name = "btnCalibrar";
             this.btnCalibrar.Size = new System.Drawing.Size(102, 38);
             this.btnCalibrar.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(530, 453);
             this.Controls.Add(this.btnCalibrar);
             this.Controls.Add(this.lblPesoHardy);
             this.Controls.Add(this.btnPesar);
