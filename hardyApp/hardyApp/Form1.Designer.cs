@@ -32,6 +32,7 @@
             this.lblPesoHardy = new System.Windows.Forms.Label();
             this.btnCalibrar = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.lblContadorPez = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPesar
@@ -47,7 +48,7 @@
             // lblPesoHardy
             // 
             this.lblPesoHardy.AutoSize = true;
-            this.lblPesoHardy.Location = new System.Drawing.Point(240, 111);
+            this.lblPesoHardy.Location = new System.Drawing.Point(224, 111);
             this.lblPesoHardy.Name = "lblPesoHardy";
             this.lblPesoHardy.Size = new System.Drawing.Size(0, 13);
             this.lblPesoHardy.TabIndex = 1;
@@ -69,11 +70,20 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             // 
+            // lblContadorPez
+            // 
+            this.lblContadorPez.AutoSize = true;
+            this.lblContadorPez.Location = new System.Drawing.Point(349, 111);
+            this.lblContadorPez.Name = "lblContadorPez";
+            this.lblContadorPez.Size = new System.Drawing.Size(0, 13);
+            this.lblContadorPez.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 453);
+            this.Controls.Add(this.lblContadorPez);
             this.Controls.Add(this.btnCalibrar);
             this.Controls.Add(this.lblPesoHardy);
             this.Controls.Add(this.btnPesar);
@@ -91,6 +101,7 @@
         private System.Windows.Forms.Label lblPesoHardy;
         private System.Windows.Forms.Button btnCalibrar;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label lblContadorPez;
     }
 }
 

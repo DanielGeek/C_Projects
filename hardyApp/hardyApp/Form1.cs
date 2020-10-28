@@ -15,6 +15,7 @@ namespace hardyApp
         String ip = "192.168.0.52";
         private double pesoHardy = 0;
         List<double> ListaPesos;
+        private int contador = 0;
         public Form1()
         {
             InitializeComponent();
@@ -73,13 +74,20 @@ namespace hardyApp
             while (!backgroundWorker1.CancellationPending)
             {
                 pesoHardy = Hardy.pesohardy(ip);
+                if (pesoHardy > 0.25)
+                {
+                    contador++;
+                    ListaPesos.Add(pesoHardy);
+                }
                 //Console.WriteLine(pesoHardy);
                 //lblPesoHardy.Text = "Peso" + pesoHardy;
                 //Console.WriteLine(pesoHardy);
-                ListaPesos.Add(pesoHardy);
+                
                 //Object ObjPeso = pesoHardy;
 
                 backgroundWorker1.ReportProgress(1);
+
+                System.Threading.Thread.Sleep(1000);
 
             }
         }
@@ -88,6 +96,7 @@ namespace hardyApp
         {
             //Double ObjPeso = (double)e.UserState;
             lblPesoHardy.Text = "Peso " + pesoHardy;
+            lblContadorPez.Text = "Total piezas " + contador;
             //if (e.ProgressPercentage == 1)
             //{
 
