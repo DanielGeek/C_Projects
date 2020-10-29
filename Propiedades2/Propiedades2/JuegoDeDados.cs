@@ -34,3 +34,4 @@ namespace Propiedades2
             Console.ReadKey();
         }
     }
+}
