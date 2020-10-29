@@ -19,11 +19,9 @@ namespace hardyApp
         public Form1()
         {
             InitializeComponent();
-            var TrabajoPrueba = new BackgroundWorker()
-            {
-                WorkerReportsProgress = true,
-                WorkerSupportsCancellation = true
-            };
+            ClasePrueba p1 = new ClasePrueba();
+            String saludar = p1.Saludo();
+            Console.WriteLine(saludar);
         }
 
         private void btnPesar_Click(object sender, EventArgs e)
