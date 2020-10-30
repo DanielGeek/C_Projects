@@ -19,15 +19,14 @@ namespace hardyApp
         public Form1()
         {
             InitializeComponent();
-            ClasePrueba p1 = new ClasePrueba();
-            String saludar = p1.Saludo();
-            Console.WriteLine(saludar);
+            
         }
 
         private void btnPesar_Click(object sender, EventArgs e)
         {
-            
 
+
+            
 
             if (btnPesar.Text == "Iniciar Pesaje")
             {
@@ -69,11 +68,20 @@ namespace hardyApp
         {
             //bool ObjPresiono = (bool)e.Argument;
             ListaPesos = new List<double>();
+            ConexionMysql conn = new ConexionMysql();
+
             while (!backgroundWorker1.CancellationPending)
             {
                 pesoHardy = Hardy.pesohardy(ip);
                 if (pesoHardy > 0.25)
                 {
+                    DateTime fechaActual = DateTime.Now;
+                    String query = string.Format($" Insert into  contadora(peso, fecha) values('{ pesoHardy.ToString().Replace(",", ".") }','{fechaActual}')");
+                    Console.WriteLine(query);
+                    int respuesta = conn.Insert(query);
+                    Console.WriteLine($"espuesta bd {respuesta} ");
+                    // ejecutar al finalizar una query
+                    
                     contador++;
                     ListaPesos.Add(pesoHardy);
                 }
@@ -88,6 +96,7 @@ namespace hardyApp
                 System.Threading.Thread.Sleep(1000);
 
             }
+            conn.Conectar().Close();
         }
 
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)

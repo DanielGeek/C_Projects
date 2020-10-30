@@ -6,8 +6,7 @@ namespace ClassMySql
     {
         static void Main()
         {
-            settings_mysql configuracionBD = new settings_mysql();
-            Console.WriteLine($"Zona horaria {configuracionBD.MyZone} Host {configuracionBD.Host}  User {configuracionBD.User} Password {configuracionBD.Password} Nombre BD { configuracionBD.NombreBD}");
+            
             ConexionMysql conn = new ConexionMysql();
             
             DateTime fechaActual = DateTime.Now;
