@@ -34,8 +34,10 @@ namespace hardyApp
             {
 
                 btnPesar.Text = "Detener";
-                
-                backgroundWorker1.RunWorkerAsync();
+                if (!backgroundWorker1.IsBusy)
+                {
+                    backgroundWorker1.RunWorkerAsync();
+                }
                 
             } 
             else
