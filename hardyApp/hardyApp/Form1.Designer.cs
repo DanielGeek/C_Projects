@@ -33,6 +33,11 @@
             this.btnCalibrar = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lblContadorPez = new System.Windows.Forms.Label();
+            this.btnSensor2 = new System.Windows.Forms.Button();
+            this.btnSensor3 = new System.Windows.Forms.Button();
+            this.lblSensor2 = new System.Windows.Forms.Label();
+            this.lblSensor3 = new System.Windows.Forms.Label();
+            this.lblEstadoSenor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPesar
@@ -78,11 +83,61 @@
             this.lblContadorPez.Size = new System.Drawing.Size(0, 13);
             this.lblContadorPez.TabIndex = 3;
             // 
+            // btnSensor2
+            // 
+            this.btnSensor2.Image = global::hardyApp.Properties.Resources.On;
+            this.btnSensor2.Location = new System.Drawing.Point(221, 230);
+            this.btnSensor2.Name = "btnSensor2";
+            this.btnSensor2.Size = new System.Drawing.Size(54, 46);
+            this.btnSensor2.TabIndex = 4;
+            this.btnSensor2.UseVisualStyleBackColor = true;
+            // 
+            // btnSensor3
+            // 
+            this.btnSensor3.Image = global::hardyApp.Properties.Resources.On;
+            this.btnSensor3.Location = new System.Drawing.Point(91, 230);
+            this.btnSensor3.Name = "btnSensor3";
+            this.btnSensor3.Size = new System.Drawing.Size(54, 46);
+            this.btnSensor3.TabIndex = 5;
+            this.btnSensor3.UseVisualStyleBackColor = true;
+            // 
+            // lblSensor2
+            // 
+            this.lblSensor2.AutoSize = true;
+            this.lblSensor2.Location = new System.Drawing.Point(218, 201);
+            this.lblSensor2.Name = "lblSensor2";
+            this.lblSensor2.Size = new System.Drawing.Size(49, 13);
+            this.lblSensor2.TabIndex = 6;
+            this.lblSensor2.Text = "Sensor 2";
+            // 
+            // lblSensor3
+            // 
+            this.lblSensor3.AutoSize = true;
+            this.lblSensor3.Location = new System.Drawing.Point(88, 201);
+            this.lblSensor3.Name = "lblSensor3";
+            this.lblSensor3.Size = new System.Drawing.Size(49, 13);
+            this.lblSensor3.TabIndex = 7;
+            this.lblSensor3.Text = "Sensor 3";
+            // 
+            // lblEstadoSenor
+            // 
+            this.lblEstadoSenor.AutoSize = true;
+            this.lblEstadoSenor.Location = new System.Drawing.Point(12, 177);
+            this.lblEstadoSenor.Name = "lblEstadoSenor";
+            this.lblEstadoSenor.Size = new System.Drawing.Size(43, 13);
+            this.lblEstadoSenor.TabIndex = 8;
+            this.lblEstadoSenor.Text = "Estado:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 453);
+            this.Controls.Add(this.lblEstadoSenor);
+            this.Controls.Add(this.lblSensor3);
+            this.Controls.Add(this.lblSensor2);
+            this.Controls.Add(this.btnSensor3);
+            this.Controls.Add(this.btnSensor2);
             this.Controls.Add(this.lblContadorPez);
             this.Controls.Add(this.btnCalibrar);
             this.Controls.Add(this.lblPesoHardy);
@@ -102,6 +157,11 @@
         private System.Windows.Forms.Button btnCalibrar;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lblContadorPez;
+        private System.Windows.Forms.Button btnSensor2;
+        private System.Windows.Forms.Button btnSensor3;
+        private System.Windows.Forms.Label lblSensor2;
+        private System.Windows.Forms.Label lblSensor3;
+        private System.Windows.Forms.Label lblEstadoSenor;
     }
 }
 
