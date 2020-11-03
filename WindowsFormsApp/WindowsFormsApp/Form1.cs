@@ -21,5 +21,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtbPantalla.Text = btnCero.Text;
+        }
     }
 }
