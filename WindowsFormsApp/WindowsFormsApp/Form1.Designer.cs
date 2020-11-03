@@ -214,7 +214,7 @@
             // 
             this.lblPantalla.BackColor = System.Drawing.SystemColors.Control;
             this.lblPantalla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPantalla.Location = new System.Drawing.Point(30, 32);
+            this.lblPantalla.Location = new System.Drawing.Point(-25, 68);
             this.lblPantalla.Name = "lblPantalla";
             this.lblPantalla.Size = new System.Drawing.Size(247, 20);
             this.lblPantalla.TabIndex = 18;
