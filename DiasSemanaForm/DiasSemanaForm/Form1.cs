@@ -19,37 +19,45 @@ namespace DiasSemanaForm
 
         private void btnLunes_Click(object sender, EventArgs e)
         {
-            lblDias.Text = btnLunes.Text;
+            if(Text.Length < 10)
+            Text += lblDias.Text = btnLunes.Text;
+            
         }
 
         private void btnMartes_Click(object sender, EventArgs e)
         {
-            lblDias.Text = btnMartes.Text;
+            if(Text.Length < 10)
+            Text += lblDias.Text = btnMartes.Text;
         }
 
         private void btnMiercoles_Click(object sender, EventArgs e)
         {
-            lblDias.Text = btnMiercoles.Text;
+            if(Text.Length < 10)
+            Text += lblDias.Text = btnMiercoles.Text;
         }
 
         private void btnJueves_Click(object sender, EventArgs e)
         {
-            lblDias.Text = btnJueves.Text;
+            if(Text.Length < 10)
+            Text += lblDias.Text = btnJueves.Text;
         }
 
         private void btnViernes_Click(object sender, EventArgs e)
         {
-            lblDias.Text = btnViernes.Text;
+            if(Text.Length < 10)
+            Text += lblDias.Text = btnViernes.Text;
         }
 
         private void btnSabado_Click(object sender, EventArgs e)
         {
-            lblDias.Text = btnSabado.Text;
+            if(Text.Length < 10)
+            Text += lblDias.Text = btnSabado.Text;
         }
 
         private void btnDomingo_Click(object sender, EventArgs e)
         {
-            lblDias.Text = btnDomingo.Text;
+            if(Text.Length < 10)
+            Text += lblDias.Text = btnDomingo.Text;
         }
     }
 }

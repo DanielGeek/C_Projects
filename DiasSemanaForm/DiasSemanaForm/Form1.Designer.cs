@@ -131,7 +131,7 @@
             this.Controls.Add(this.btnMartes);
             this.Controls.Add(this.btnLunes);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "días App";
             this.ResumeLayout(false);
             this.PerformLayout();
 
