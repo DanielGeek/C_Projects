@@ -105,7 +105,6 @@ namespace hardyApp
 
             if (btnPesar.Text == "Iniciar Pesaje")
             {
-
                 btnPesar.Text = "Detener";
                 if (!backgroundWorker1.IsBusy)
                 {
@@ -147,7 +146,6 @@ namespace hardyApp
             bool estado = false;
             int CardAddr = 0;
             int h = OpenDevice(CardAddr);
-            
             switch (h)
             {
                 case 0:
@@ -156,37 +154,51 @@ namespace hardyApp
                 case 3:
                     bool estadoEntrada2 = ReadDigitalChannel(2);
                     bool estadoEntrada3 = ReadDigitalChannel(3);
+                    
                     this.lblEstadoSenor.Invoke(new MethodInvoker(delegate ()
                     {
                         lblEstadoSenor.Text = "Card " + h.ToString() + " connected";
                     }));
                     while (!backgroundWorker1.CancellationPending)
                     {
-                        while (estadoEntrada2 || estadoEntrada3)
+                        estadoEntrada2 = ReadDigitalChannel(2);
+                        estadoEntrada3 = ReadDigitalChannel(3);
+
+                        if (estadoEntrada2)
                         {
-
-                            if (estadoEntrada2)
+                            this.btnSensor2.Invoke(new MethodInvoker(delegate ()
                             {
-                                this.btnSensor2.Invoke(new MethodInvoker(delegate ()
-                                {
 
-                                    btnSensor2.Enabled = estadoEntrada2;
-                                }
-                                ));
+                                btnSensor2.Enabled = estadoEntrada2;
+                            }));
 
 
-                            }
-                            if (estadoEntrada3)
+                        } else
+                        {
+                            this.btnSensor2.Invoke(new MethodInvoker(delegate ()
                             {
-                                this.btnSensor3.Invoke(new MethodInvoker(delegate ()
 
-                                {
-                                    btnSensor3.Enabled = estadoEntrada3;
-                                }
-                                ));
+                                btnSensor2.Enabled = estadoEntrada2;
+                            }));
+                        }
+                        if (estadoEntrada3)
+                        {
+                            this.btnSensor3.Invoke(new MethodInvoker(delegate ()
 
-                            }
+                            {
+                                btnSensor3.Enabled = estadoEntrada3;
+                            }));
 
+                        } else
+                        {
+                            this.btnSensor3.Invoke(new MethodInvoker(delegate ()
+
+                            {
+                                btnSensor3.Enabled = estadoEntrada3;
+                            }));
+                        }
+                        while (estadoEntrada2 || estadoEntrada3 )
+                        {
                             pesoHardy = Hardy.pesohardy(ip);
 
                             // agrego a la lista todos los pesos del pez para luego obtener el máximo en el ProgressChanged
@@ -195,7 +207,6 @@ namespace hardyApp
                             {
                                 lblPesoHardy.Text = pesoHardy.ToString();
                             }));
-
 
                             if (pesoHardy < 0.1)
                             {
@@ -216,9 +227,11 @@ namespace hardyApp
                                     }
 
                                 }
-
+                                
 
                             }
+                            estadoEntrada2 = ReadDigitalChannel(2);
+                            estadoEntrada3 = ReadDigitalChannel(3);
                         }
                         
 
@@ -229,7 +242,6 @@ namespace hardyApp
                     lblEstadoSenor.Text = "Card " + CardAddr.ToString() + " not found";
                     break;
             }
-            
             
         }
 
@@ -245,7 +257,7 @@ namespace hardyApp
             // tomar el peso máximo del pez y insertarlo
             int respuesta = conn.Insert(query);
             Console.WriteLine($"espuesta bd {respuesta} ");
-
+            lblPesoMaximo.Text = $"Peso máximo {pesoHardyMaximo.ToString()}";
             //if (e.ProgressPercentage == 1)
             //{
 
@@ -262,7 +274,7 @@ namespace hardyApp
             Console.WriteLine();
             Console.WriteLine("Finaliza el Trabajo de prueba");
             // peso máximo de todos los peces que pasaron
-            lblPesoHardy.Text = "Peso Máximo = " + pesoHardyMaximo;
+            //lblPesoHardy.Text = "Peso Máximo = " + pesoHardyMaximo;
             conn.Conectar().Close();
 
         }

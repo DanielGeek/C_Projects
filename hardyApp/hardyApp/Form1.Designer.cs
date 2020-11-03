@@ -38,6 +38,7 @@
             this.lblSensor2 = new System.Windows.Forms.Label();
             this.lblSensor3 = new System.Windows.Forms.Label();
             this.lblEstadoSenor = new System.Windows.Forms.Label();
+            this.lblPesoMaximo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPesar
@@ -85,6 +86,7 @@
             // 
             // btnSensor2
             // 
+            this.btnSensor2.Enabled = false;
             this.btnSensor2.Image = global::hardyApp.Properties.Resources.On;
             this.btnSensor2.Location = new System.Drawing.Point(221, 230);
             this.btnSensor2.Name = "btnSensor2";
@@ -94,6 +96,7 @@
             // 
             // btnSensor3
             // 
+            this.btnSensor3.Enabled = false;
             this.btnSensor3.Image = global::hardyApp.Properties.Resources.On;
             this.btnSensor3.Location = new System.Drawing.Point(91, 230);
             this.btnSensor3.Name = "btnSensor3";
@@ -128,11 +131,20 @@
             this.lblEstadoSenor.TabIndex = 8;
             this.lblEstadoSenor.Text = "Estado:";
             // 
+            // lblPesoMaximo
+            // 
+            this.lblPesoMaximo.AutoSize = true;
+            this.lblPesoMaximo.Location = new System.Drawing.Point(426, 111);
+            this.lblPesoMaximo.Name = "lblPesoMaximo";
+            this.lblPesoMaximo.Size = new System.Drawing.Size(0, 13);
+            this.lblPesoMaximo.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 453);
+            this.Controls.Add(this.lblPesoMaximo);
             this.Controls.Add(this.lblEstadoSenor);
             this.Controls.Add(this.lblSensor3);
             this.Controls.Add(this.lblSensor2);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Label lblSensor2;
         private System.Windows.Forms.Label lblSensor3;
         private System.Windows.Forms.Label lblEstadoSenor;
+        private System.Windows.Forms.Label lblPesoMaximo;
     }
 }
 

@@ -128,6 +128,7 @@ namespace DEMO_DIO
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            
             btnin1.Enabled = ReadDigitalChannel(2);
             button3.Enabled = ReadDigitalChannel(3);
 
