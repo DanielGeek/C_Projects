@@ -16,5 +16,19 @@ namespace SumaAppForm
         {
             InitializeComponent();
         }
+
+        private void btnSumar_Click(object sender, EventArgs e)
+        {
+            if (txtBValor1.TextLength < 1 || txtBValor2.TextLength < 1)
+            {
+                MessageBox.Show("Debe ingresar un número en cada campo");
+                return;
+            }
+            int valor1 = int.Parse(txtBValor1.Text);
+            int valor2 = int.Parse(txtBValor2.Text);
+            
+            int suma = valor1 + valor2;
+            lblResultado.Text += suma.ToString();
+        }
     }
 }
